@@ -1,175 +1,310 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Newspeak Dictionary</title>
+  <title>NEWSPEAK DICTIONARY</title>
 
   <style>
     body {
+      cursor: none;
       background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 30px;
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.723)),
+        url("https://s26162.pcdn.co/wp-content/uploads/2022/06/1984.jpg");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      color: #5cac01;
+      font-family: "Courier New", monospace;
+      margin: 0;
     }
 
-    h1 {
-      color: darkred;
-      text-align: center;
-      font-size: 45px;
+    .custom-cursor {
+      position: fixed;
+      width: 35px;
+      height: 35px;
+      pointer-events: none;
+      z-index: 9999;
     }
 
-    h2 {
-      color: red;
-      border-bottom: 2px solid red;
-      padding-bottom: 5px;
-    }
-
-    .intro {
-      background-color: #1a1a1a;
-      padding: 15px;
-      border-left: 5px solid red;
-      margin-bottom: 25px;
-    }
-
-    .word {
-      background-color: #1a1a1a;
-      border: 1px solid gray;
-      padding: 15px;
-      margin-bottom: 15px;
-    }
-
-    .word h3 {
-      color: darkred;
-      font-size: 25px;
-      margin-top: 0;
-    }
-
-    .label {
-      color: red;
+    .banner {
+      background-color: black;
+      color: #C4FF7F;
+      border-top: 2px dotted #C4FF7F;
+      border-bottom: 2px dotted #C4FF7F;
+      padding: 8px;
       font-weight: bold;
     }
 
-    .ending {
-      background-color: #1a1a1a;
+    .banner-img {
+      width: 22px;
+      height: 22px;
+      vertical-align: middle;
+      margin: 0 8px;
+    }
+
+    .page {
+      width: 850px;
+      margin: 25px auto 40px auto;
+      background-color: rgba(0, 0, 0, 0.604);
+      border: 3px solid #C4FF7F;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #C4FF7F;
+      font-size: 46px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 3px 3px #950000;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #C4FF7F;
+      border-bottom: 2px dotted #C4FF7F;
+      text-transform: uppercase;
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      color: #C4FF7F;
+      font-size: 24px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .box {
+      background-color: rgba(0, 0, 0, 0.718);
+      border: 2px solid #C4FF7F;
       padding: 15px;
-      border-left: 5px solid red;
+      margin: 18px 0;
+    }
+
+    .word {
+      background-color: rgba(0, 0, 0, 0.88);
+      border: 1px dashed #C4FF7F;
+      padding: 12px;
+      margin: 15px 0;
+    }
+
+    .label {
+      color: #950000;
+      font-weight: bold;
+    }
+
+    .white-text {
+      color: white;
+    }
+
+    .side-face {
+      position: fixed;
+      right: 80px;
+      top: 220px;
+      width: 230px;
+      filter: grayscale(100%) contrast(200%) hue-rotate(80deg);
+    }
+
+    .mini-images {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .mini-images img {
+      width: 120px;
+      border: 2px solid #C4FF7F;
+      margin: 8px;
+      background-color: white;
+      padding: 4px;
+    }
+
+    a {
+      color: #950000;
+    }
+
+    .footer {
+      color: #C4FF7F;
+      border-top: 2px dotted #C4FF7F;
       margin-top: 25px;
+      padding-top: 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 1000px) {
+      .side-face {
+        display: none;
+      }
+
+      .page {
+        width: auto;
+        margin: 15px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Newspeak Dictionary</h1>
+  <img class="custom-cursor" id="customCursor" src="magnifying-glasss.png" alt="">
 
-  <div class="intro">
-    <h2>What Is Newspeak?</h2>
-    <p>
-      In 1984, Newspeak is the language the Party uses to control people.
-      It removes words about freedom, rebellion, and truth so people have
-      fewer ways to question Big Brother.
-    </p>
+  <marquee class="banner">
+    <img class="banner-img" src="https://oddityz.neocities.org/pixels/red/skull.webp" alt="skull">
+    ... WAR IS PEACE ...
+    <img class="banner-img" src="https://oddityz.neocities.org/pixels/red/skull.webp" alt="skull">
+    FREEDOM IS SLAVERY ...
+    <img class="banner-img" src="https://oddityz.neocities.org/pixels/red/skull.webp" alt="skull">
+    IGNORANCE IS STRENGTH ...
+    <img class="banner-img" src="https://oddityz.neocities.org/pixels/red/skull.webp" alt="skull">
+    ... WAR IS PEACE ...
+    <img class="banner-img" src="https://oddityz.neocities.org/pixels/red/skull.webp" alt="skull">
+    FREEDOM IS SLAVERY ...
+    <img class="banner-img" src="https://oddityz.neocities.org/pixels/red/skull.webp" alt="skull">
+    IGNORANCE IS STRENGTH ...
+    <img class="banner-img" src="https://oddityz.neocities.org/pixels/red/skull.webp" alt="skull">
+    ... WAR IS PEACE ...
+    <img class="banner-img" src="https://oddityz.neocities.org/pixels/red/skull.webp" alt="skull">
+    FREEDOM IS SLAVERY ...
+    <img class="banner-img" src="https://oddityz.neocities.org/pixels/red/skull.webp" alt="skull">
+    IGNORANCE IS STRENGTH ...
+    <img class="banner-img" src="https://oddityz.neocities.org/pixels/red/skull.webp" alt="skull">
+  </marquee>
+
+  <img class="side-face" src="https://static.wikia.nocookie.net/villains/images/8/83/BigBrother.png/revision/latest?cb=20190112153043" alt="Big Brother">
+
+  <div class="page">
+
+    <h1>NEWSPEAK DICTIONARY</h1>
+
+    <div class="box">
+      <h2>What Is Newspeak?</h2>
+      <p class="white-text">
+        This digital Newspeak Dictionary is inspired by Syme's work in 1984.
+        Newspeak is the Party's way of controlling people by taking away words
+        about freedom, rebellion, and truth. Each word I created shows how language
+        can be changed or simplified to limit what people are able to think and say.
+      </p>
+    </div>
+
+    <div class="mini-images">
+      <img src="https://static.wikia.nocookie.net/villains/images/9/93/1024px-Ingsoc_logo_from_1984.svg.png/revision/latest?cb=20140807235802" alt="The Party">
+      <img src="https://static.wikia.nocookie.net/villains/images/9/93/1024px-Ingsoc_logo_from_1984.svg.png/revision/latest?cb=20140807235802" alt="The Party">
+      <img src="https://static.wikia.nocookie.net/villains/images/9/93/1024px-Ingsoc_logo_from_1984.svg.png/revision/latest?cb=20140807235802" alt="The Party">
+      <img src="https://static.wikia.nocookie.net/villains/images/9/93/1024px-Ingsoc_logo_from_1984.svg.png/revision/latest?cb=20140807235802" alt="The Party">
+      <img src="https://static.wikia.nocookie.net/villains/images/9/93/1024px-Ingsoc_logo_from_1984.svg.png/revision/latest?cb=20140807235802" alt="The Party">
+    </div>
+
+    <h2>Party Vocabulary</h2>
+
+    <div class="word">
+      <h3>Freewrong</h3>
+      <p><span class="label">Definition:</span> Any thought that questions the Party.</p>
+      <p><span class="label">How it controls thought:</span> It makes freedom sound wrong or dangerous.</p>
+    </div>
+
+    <div class="word">
+      <h3>Truthfix</h3>
+      <p><span class="label">Definition:</span> Changing facts so they match what the Party says.</p>
+      <p><span class="label">How it controls thought:</span> It teaches people that truth can be changed.</p>
+    </div>
+
+    <div class="word">
+      <h3>Pastwipe</h3>
+      <p><span class="label">Definition:</span> Erasing old events from memory or records.</p>
+      <p><span class="label">How it controls thought:</span> It makes people unable to prove the Party lied.</p>
+    </div>
+
+    <div class="word">
+      <h3>Joyserve</h3>
+      <p><span class="label">Definition:</span> Happiness that comes from obeying the Party.</p>
+      <p><span class="label">How it controls thought:</span> It makes obedience seem like the only way to be happy.</p>
+    </div>
+
+    <div class="word">
+      <h3>Thinkstop</h3>
+      <p><span class="label">Definition:</span> Stopping yourself before questioning the Party.</p>
+      <p><span class="label">How it controls thought:</span> It trains people to fear their own thoughts.</p>
+    </div>
+
+    <div class="word">
+      <h3>Ownlove</h3>
+      <p><span class="label">Definition:</span> Loving one person more than Big Brother.</p>
+      <p><span class="label">How it controls thought:</span> It makes personal love seem selfish or wrong.</p>
+    </div>
+
+    <div class="word">
+      <h3>Goodhate</h3>
+      <p><span class="label">Definition:</span> Hatred that supports the Party.</p>
+      <p><span class="label">How it controls thought:</span> It makes anger seem patriotic.</p>
+    </div>
+
+    <div class="word">
+      <h3>Speakclean</h3>
+      <p><span class="label">Definition:</span> Using only approved Party words.</p>
+      <p><span class="label">How it controls thought:</span> It removes complicated ideas from conversation.</p>
+    </div>
+
+    <div class="word">
+      <h3>Memoryrot</h3>
+      <p><span class="label">Definition:</span> A memory that disagrees with Party history.</p>
+      <p><span class="label">How it controls thought:</span> It makes people stop trusting their own memories.</p>
+    </div>
+
+    <div class="word">
+      <h3>Partywise</h3>
+      <p><span class="label">Definition:</span> Being smart only when agreeing with the Party.</p>
+      <p><span class="label">How it controls thought:</span> It makes independent thinking seem stupid.</p>
+    </div>
+
+    <div class="word">
+      <h3>Peacewar</h3>
+      <p><span class="label">Definition:</span> War that is described as peace.</p>
+      <p><span class="label">How it controls thought:</span> It makes people accept violence as normal.</p>
+    </div>
+
+    <div class="word">
+      <h3>Facecrime</h3>
+      <p><span class="label">Definition:</span> Looking like you disagree with the Party.</p>
+      <p><span class="label">How it controls thought:</span> It makes even facial expressions dangerous.</p>
+    </div>
+
+    <div class="word">
+      <h3>Unperson</h3>
+      <p><span class="label">Definition:</span> A person erased by the Party like they never existed.</p>
+      <p><span class="label">How it controls thought:</span> It makes people afraid to remember others.</p>
+    </div>
+
+    <div class="word">
+      <h3>Crimestop</h3>
+      <p><span class="label">Definition:</span> The habit of avoiding dangerous thoughts.</p>
+      <p><span class="label">How it controls thought:</span> It makes people censor themselves.</p>
+    </div>
+
+    <div class="word">
+      <h3>Bigtruth</h3>
+      <p><span class="label">Definition:</span> Whatever Big Brother says is true.</p>
+      <p><span class="label">How it controls thought:</span> It replaces real evidence with loyalty.</p>
+    </div>
+
+    <div class="footer">
+      You must love Big Brother.
+    </div>
+
   </div>
 
-  <h2>Party Vocabulary</h2>
+  <script>
+    var cursor = document.getElementById("customCursor");
 
-  <div class="word">
-    <h3>Freewrong</h3>
-    <p><span class="label">Definition:</span> Any thought that questions the Party.</p>
-    <p><span class="label">How it controls thought:</span> It makes freedom sound wrong or dangerous.</p>
-  </div>
-
-  <div class="word">
-    <h3>Truthfix</h3>
-    <p><span class="label">Definition:</span> Changing facts so they match what the Party says.</p>
-    <p><span class="label">How it controls thought:</span> It teaches people that truth can be changed.</p>
-  </div>
-
-  <div class="word">
-    <h3>Pastwipe</h3>
-    <p><span class="label">Definition:</span> Erasing old events from memory or records.</p>
-    <p><span class="label">How it controls thought:</span> It makes people unable to prove the Party lied.</p>
-  </div>
-
-  <div class="word">
-    <h3>Joyserve</h3>
-    <p><span class="label">Definition:</span> Happiness that comes from obeying the Party.</p>
-    <p><span class="label">How it controls thought:</span> It makes obedience seem like the only way to be happy.</p>
-  </div>
-
-  <div class="word">
-    <h3>Thinkstop</h3>
-    <p><span class="label">Definition:</span> Stopping yourself before questioning the Party.</p>
-    <p><span class="label">How it controls thought:</span> It trains people to fear their own thoughts.</p>
-  </div>
-
-  <div class="word">
-    <h3>Ownlove</h3>
-    <p><span class="label">Definition:</span> Loving one person more than Big Brother.</p>
-    <p><span class="label">How it controls thought:</span> It makes personal love seem selfish or wrong.</p>
-  </div>
-
-  <div class="word">
-    <h3>Goodhate</h3>
-    <p><span class="label">Definition:</span> Hatred that supports the Party.</p>
-    <p><span class="label">How it controls thought:</span> It makes anger seem patriotic.</p>
-  </div>
-
-  <div class="word">
-    <h3>Speakclean</h3>
-    <p><span class="label">Definition:</span> Using only approved Party words.</p>
-    <p><span class="label">How it controls thought:</span> It removes complicated ideas from conversation.</p>
-  </div>
-
-  <div class="word">
-    <h3>Memoryrot</h3>
-    <p><span class="label">Definition:</span> A memory that disagrees with Party history.</p>
-    <p><span class="label">How it controls thought:</span> It makes people stop trusting their own memories.</p>
-  </div>
-
-  <div class="word">
-    <h3>Partywise</h3>
-    <p><span class="label">Definition:</span> Being smart only when agreeing with the Party.</p>
-    <p><span class="label">How it controls thought:</span> It makes independent thinking seem stupid.</p>
-  </div>
-
-  <div class="word">
-    <h3>Peacewar</h3>
-    <p><span class="label">Definition:</span> War that is described as peace.</p>
-    <p><span class="label">How it controls thought:</span> It makes people accept violence as normal.</p>
-  </div>
-
-  <div class="word">
-    <h3>Facecrime</h3>
-    <p><span class="label">Definition:</span> Looking like you disagree with the Party.</p>
-    <p><span class="label">How it controls thought:</span> It makes even facial expressions dangerous.</p>
-  </div>
-
-  <div class="word">
-    <h3>Unperson</h3>
-    <p><span class="label">Definition:</span> A person erased by the Party like they never existed.</p>
-    <p><span class="label">How it controls thought:</span> It makes people afraid to remember others.</p>
-  </div>
-
-  <div class="word">
-    <h3>Crimestop</h3>
-    <p><span class="label">Definition:</span> The habit of avoiding dangerous thoughts.</p>
-    <p><span class="label">How it controls thought:</span> It makes people censor themselves.</p>
-  </div>
-
-  <div class="word">
-    <h3>Bigtruth</h3>
-    <p><span class="label">Definition:</span> Whatever Big Brother says is true.</p>
-    <p><span class="label">How it controls thought:</span> It replaces real evidence with loyalty.</p>
-  </div>
-
-  <div class="ending">
-    <h2>Conclusion</h2>
-    <p>
-      Newspeak shows that language is powerful because it shapes what people
-      are able to think. If people lose words for freedom, truth, and rebellion,
-      those ideas become harder to understand.
-    </p>
-  </div>
+    document.addEventListener("mousemove", function(event) {
+      cursor.style.left = event.clientX - 5 + "px";
+      cursor.style.top = event.clientY - 5 + "px";
+    });
+  </script>
 
 </body>
 </html>
