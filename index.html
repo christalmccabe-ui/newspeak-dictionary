@@ -341,14 +341,20 @@
 
   </div>
 
-  <script>
-    var cursor = document.getElementById("customCursor");
+<script>
+  var cursor = document.getElementById("customCursor");
 
-    document.addEventListener("mousemove", function(event) {
-      cursor.style.left = event.clientX - 5 + "px";
-      cursor.style.top = event.clientY - 5 + "px";
-    });
-  </script>
+  document.addEventListener("mousemove", function(event) {
+    cursor.style.left = event.clientX - 5 + "px";
+    cursor.style.top = event.clientY - 5 + "px";
+  });
+
+  document.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+    alert("Uh uh uh");
+  });
+</script>
+
 
 </body>
 </html>
